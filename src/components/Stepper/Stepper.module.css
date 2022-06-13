@@ -1,0 +1,10 @@
+.stepperContainer {
+  position: relative;
+}
+
+.stepperInput {
+  position: absolute;
+  text-align: right;
+  margin-top: -2px;
+  width: 30px;
+}

@@ -1,0 +1,18 @@
+.fieldPropPanel {
+  display: inline-flex;
+  grid-gap: 10px;
+}
+
+.fieldPropGroup {
+  display: grid;
+  width: 100px;
+}
+
+.fieldPropElement {
+  display: inline-flex;
+  margin: 5px;
+}
+
+.fieldPropTextbox {
+  width: 30px;
+}

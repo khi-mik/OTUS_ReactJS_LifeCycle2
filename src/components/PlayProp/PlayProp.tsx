@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Stepper } from "../Stepper/Stepper"
+import { SpeedEdit } from "../SpeedEdit/SpeedEdit"
 import { SettingsPanel } from "../GameSettingsPanel/Group"
 import { game_speed } from "../Game/Game"
 import styles from "./PlayProp.module.css"
@@ -37,11 +37,10 @@ export const PlayProp = ({
         >
         </div>
         <div className={`${styles.playProp} ${styles.speedStepper}`}>
-          <Stepper
-            step={1}
+          <SpeedEdit
             startValue={game_speed}
             onValueChange={onSpeedChange}
-          ></Stepper>
+          ></SpeedEdit>
         </div>
         <div
           data-testid="run"

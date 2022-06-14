@@ -1,10 +1,10 @@
 import { LoginForm } from "./LoginForm"
-import { act, render, screen, fireEvent } from "@testing-library/react"
+import { act, render, screen } from "@testing-library/react"
 import "@testing-library/jest-dom"
 describe("render tests", () => {
   it("render", () => {
     render(<LoginForm onSubmit={() => {}} />)
-    expect(screen.getByPlaceholderText("Введите имя")).toBeInTheDocument()
+    expect(screen.getByPlaceholderText("Input your name")).toBeInTheDocument()
   })
 })
 

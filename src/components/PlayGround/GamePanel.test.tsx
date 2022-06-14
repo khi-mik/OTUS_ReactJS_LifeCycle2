@@ -18,7 +18,6 @@ describe("render tests", () => {
         <GamePanel />
       </Provider>
     )
-    expect(screen.getByText("Скорость:")).toBeInTheDocument()
     expect(screen.getByTestId("speed")).toBeInTheDocument()
     expect(screen.getByTestId("run")).toBeInTheDocument()
     expect(screen.getByTestId("restart")).toBeInTheDocument()
@@ -29,7 +28,7 @@ describe("render tests", () => {
         <GamePanel />
       </Provider>
     )
-    const cellCount = screen.getByPlaceholderText("Число ячеек")
+    const cellCount = screen.getByPlaceholderText("Cell count")
     act(() => {
       fireEvent.change(cellCount, { target: { value: "5" } })
     })
@@ -42,7 +41,7 @@ describe("render tests", () => {
         <GamePanel />
       </Provider>
     )
-    const percentage = screen.getByPlaceholderText("Заполненность")
+    const percentage = screen.getByPlaceholderText("Population")
     const startButton = screen.getByTestId("run")
 
     act(() => {

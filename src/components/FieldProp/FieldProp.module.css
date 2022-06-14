@@ -11,6 +11,7 @@
 .fieldPropElement {
   display: inline-flex;
   margin: 5px;
+  color: #41cb71;
 }
 
 .fieldPropTextbox {

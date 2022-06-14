@@ -12,7 +12,6 @@ describe("render tests", () => {
         onSpeedChange={() => {}}
       />
     )
-    expect(screen.getByText("Скорость:")).toBeInTheDocument()
     expect(screen.getByTestId("speed")).toBeInTheDocument()
     expect(screen.getByTestId("run")).toBeInTheDocument()
     expect(screen.getByTestId("restart")).toBeInTheDocument()

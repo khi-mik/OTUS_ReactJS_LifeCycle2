@@ -1,10 +1,10 @@
-import { Stepper } from "./Stepper"
+import { SpeedEdit } from "./SpeedEdit"
 import { act, render, screen, fireEvent } from "@testing-library/react"
 import "@testing-library/jest-dom"
 
 describe("render tests Stepper", () => {
   it("render", () => {
-    render(<Stepper startValue={1} onValueChange={() => {}} step={1} />)
+    render(<SpeedEdit startValue={1} onValueChange={() => {}} step={1} />)
     expect(screen.getByRole("textbox")).toBeInTheDocument()
   })
 })
@@ -13,7 +13,7 @@ describe("change Stepper value tests", () => {
   it("enter number and char", () => {
     let x = 0
     render(
-      <Stepper
+      <SpeedEdit
         onValueChange={(value) => {
           x = value
         }}
@@ -37,7 +37,7 @@ describe("change Stepper value tests", () => {
   it("test other step", () => {
     let x = 0
     render(
-      <Stepper
+      <SpeedEdit
         onValueChange={(value) => {
           x = value
         }}
